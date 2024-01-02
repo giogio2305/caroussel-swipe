@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.swiper{
+    width: 100%;
+    height: 480px;
+}
+
+.swiper-wrapper{
+    width: 400px;
+    height: 320px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-slide{
+    position: relative;
+    width: 400px;
+    height: 320px;
+    text-align: center;
+    padding: 4px;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-slide .des {
+    position: absolute;
+    width: 97%;
+    height: 96%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    padding: 6px;
+    
+}
+
+.ud{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+.un{
+    font-weight: bolder;
+    color: #fff;
+}
+.ur{
+    font-weight: 200;
+    font-style: italic;
+    color: #e0e0e0;
+}
+
+.lb{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 50px;
+    padding: 12px;
+    background-color: #fff;
+    color: #222;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.icon{
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+}
+.rate{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.stars{
+    width: 16px;
+    height: 16px;
+    color: #fff;
+}
+.swiper-pagination-bullet{
+margin-top: 20px;
+}
+
+.tpl{
+    width: 88px;
+    height: 24px;
+    margin-left: 8px;
+}
+.tpl img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
