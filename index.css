@@ -13,12 +13,13 @@ body{
 
 .swiper{
     width: 100%;
-    height: 480px;
+    height: 100%;
+    padding: 8px 0;
 }
 
 .swiper-wrapper{
-    width: 400px;
-    height: 320px;
+    width: 100% !important;
+    height: 100% !important;
     background-color: #fff;
     display: flex;
     align-items: center;
@@ -27,10 +28,11 @@ body{
 
 .swiper-slide{
     position: relative;
-    width: 400px;
-    height: 320px;
+    width: 50% !important;
+    height: 480px !important;
     text-align: center;
     padding: 4px;
+    overflow: clip;
 }
 
 .swiper-slide img {
@@ -41,14 +43,14 @@ body{
 
 .swiper-slide .des {
     position: absolute;
-    width: 97%;
-    height: 96%;
-    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: end;
-    padding: 6px;
+    padding-left: 10px;
     
 }
 
@@ -56,7 +58,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 15px;
+    font-size: clamp(5px, 2vw, 15px);
 }
 .un{
     font-weight: bolder;
@@ -79,7 +81,7 @@ body{
     border-radius: 30px;
     font-size: 12px;
     font-weight: bold;
-    margin-bottom: 8px;
+    margin-bottom: 20px;
 }
 .icon{
     width: 20px;
@@ -96,9 +98,7 @@ body{
     height: 16px;
     color: #fff;
 }
-.swiper-pagination-bullet{
-margin-top: 20px;
-}
+
 
 .tpl{
     width: 88px;
@@ -109,4 +109,23 @@ margin-top: 20px;
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.swiper-button-next::after, .swiper-button-prev::after{
+    content: "" !important;
+}
+.swiper-button-next, .swiper-button-prev{
+    background-color: blue;
+    width: 36px !important;
+    height: 36px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 10px;
+}
+.swiper-pagination-bullet-active{
+    background-color: #AAA !important;
+}
+.swiper-pagination-bullet{
+    margin-top: 10px !important;
 }
